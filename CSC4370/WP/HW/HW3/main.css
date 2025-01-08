@@ -1,0 +1,25 @@
+.part1{
+    display:block;
+    
+    flex-flow: nowrap;
+    border: 1px;
+    border-style:double;
+    border-width: 5px;
+}
+
+.part2{
+    display:block;
+    
+    flex-flow: nowrap;
+    border: 1px;
+    border-style:double;
+    border-width: 5px;
+}
+.part3{
+    display:block;
+    
+    flex-flow: nowrap;
+    border: 1px;
+    border-style:double;
+    border-width: 5px;
+}

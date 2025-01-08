@@ -1,0 +1,83 @@
+--- START FILE: HTML ---
+<!-- demo with a made up api - just to show as an example
+The URL https://wp.google.com/weather.php?zip=XXXXX, where XXXXX is a five digit ZIP code, returns JSON containing a randomly produced forecast for the given ZIP code. If the ZIP code is not given or is not five digits, the JSON response indicates the ZIP code is not found.-->
+
+Json file
+{
+   "success": true,
+   "forecast": [
+      { "high": "90", "low": "72", "desc": "sunny" },
+      { "high": "92", "low": "73", "desc": "mostly sunny" },
+      { "high": "87", "low": "64", "desc": "rain" },
+      { "high": "88", "low": "65", "desc": "cloudy" },
+      { "high": "90", "low": "68", "desc": "partly cloudy" }
+   ]
+   }
+   
+   The not found 
+   {
+       "succes": false, 
+       "error": "Zip code bogus dude"   
+   }
+   
+<!DOCTYPE html>
+<html>
+
+  <body>
+    <p>
+      <label for="zip">ZIP code:</label>
+      <input type="text" id="zip" maxlength="5">
+      <button id="search">Search</button>
+    </p>
+    <div id="forecast"></div>
+  </body>
+
+</html>
+
+
+--- END FILE: HTML ---
+
+--- START FILE: JavaScript ---
+<script>
+async function getForecast() {
+let zipcode = document.getElementById("zip").value;
+let url = "https://wp.google.com/weather.php?zip=" + zipcode;
+let response = await fetch(url);
+
+// Verify response code is 2XX
+if (response.ok) {
+let weather = await response.json();
+
+let html = "";
+if (weather.success) {
+html += "<h1>Forecast</h1>";
+html += "<ol>";
+  for (let day of weather.forecast) {
+  html += "<li>" + day.desc + ": high is " + day.high + ", low is " + day.low + "</li>";
+  }
+  html += "</ol>";
+}
+else {
+html = "<h1>Error: " + weather.error + "</h1>";
+}
+
+// Show forecast
+document.getElementById("forecast").innerHTML = html;
+}
+else {
+alert("HTTP error: " + response.status);
+	}
+}
+
+document.getElementById("search").addEventListener("click", getForecast);
+</script>
+
+--- END FILE: JavaScript ---
+
+
+Forecast
+partly cloudy: high is 71, low is 61
+cloudy: high is 68, low is 59
+rain: high is 69, low is 58
+rain: high is 67, low is 57
+partly cloudy: high is 61, low is 55

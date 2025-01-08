@@ -1,0 +1,40 @@
+h1,
+h2 {
+  text-align: center;
+}
+
+#main {
+  width: 70%;
+  display: flex;
+  padding: 2em;
+}
+
+.column {
+  padding: 2em;
+  margin: 2em;
+  border: 4px;
+  border-style: dashed;
+  border-color: red;
+}
+.leftCol {
+  float: left;
+  flex-basis: 33%;
+}
+
+.rightCol {
+  float: right;
+  flex-basis: 67%;
+}
+
+#puppyMowg {
+  float: right;
+  width: 200px;
+}
+
+#rightColFinalPar {
+  clear: both;
+}
+.finalP {
+  position: fixed;
+  margin-bottom: px;
+}

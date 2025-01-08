@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+Activity 01: creating a table
+<html>
+  <head>
+    <title>HTML TABLE DESIGN</title>
+    <style>
+        table,
+        th,
+        td {
+          border: 1px solid black;  
+        }
+      </style>
+  </head>
+
+  <!-- This is link to second page -->
+<br>
+    <a href="./tab_ex2.html">|Go to Table Part 2|</a>
+  <body>
+    <table >
+        <TABLE style= "width: 80%" align = "center"> 
+      <caption align="left">
+        CSC4370/6370 timetable
+      </caption>
+      <tr align="center"></tr>
+      <tr align="center"></tr>
+      <tr align="center">
+        <td width=50% b > </td> 
+            <th width = 150> Monday </th>
+            <th width = 150> Tuesday</th>
+            <th width = 150> Wednesday </th>
+            <th width = 150> Thursday</th>
+            <th width = 150> Friday</th>
+      </tr>
+      <tr>
+        <td>6-7pm</td>
+        <td>look at website</td>
+        <td>free</td>
+        <td>Study</td>
+        <td>free</td>
+        <td>free</td>
+      </tr>
+      <tr>
+        <td>7-8pm</td>
+        <td>look at website</td>
+        <td>free</td>
+        <td>Study</td>
+        <td>free</td>
+        <td>free</td>
+      </tr>
+    </table>
+
+    <h3>
+        Activity 4: using colspan, cellspaceing anad cellpadding
+    </h3>
+
+    <table style= "width: 30%" align = "center" > 
+        <tr >
+            <td bgcolor = "red" rowspan = 2 width = 75> red cell</td> 
+            <td bgcolor = "silver" height =100> silver cell</td>
+        </tr> 
+        <tr >
+            <td bgcolor = "gold" height =100> gold cell</td>
+        </tr>
+    </table>
+
+
+    <table style= "width: 30%" align = "center" cellspacing = 15> 
+        <tr>
+            <td colspan=2 height=100 bgcolor="red">red cell</td>
+        </tr>
+        <tr >
+            <td bgcolor = "silver" height =100> silver cell</td>
+            <td bgcolor = "gold" height =100> gold cell</td>
+        </tr>
+    </table>
+
+    <h3>
+        Activity 5: More cellspacing and cellpadding
+    </h3>
+
+    <table style= "width: 30%" height = 30 align = "center" cellspacing = 0 cellpadding = 0>
+        <tr>
+            <td height=15 bgcolor="darkred"></td>
+            <td width=40% bgcolor="red"></td> 
+            <td width=40% bgcolor="pink"></td>
+        </tr>
+            <td height=15 bgcolor="darkblue"></td>
+            <td width=40% bgcolor="blue"></td>
+            <td width=40% bgcolor="lightblue"></td>
+        </table>
+    <h3>
+        Activity 6: Time Table
+    </h3>
+
+    <p align = "center"> Ian's Timetable </p>
+    <table align = "center">
+        <TABLE style= "width: 80%" align = "center"> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td colspan = "3"> Morning </td>
+            <td> Lunch </td>
+            <td colspan = "4"> Afternoon </td>
+            <td colspan = "3"> Evening </td>
+        </tr>
+            <tr height=50>
+                <td> </td>
+                <td> </td>
+                <td width=5%> 9-10 am </td>
+                <td width=5%> 10-11 am </td>
+                <td width=5%> 11-12 am </td>
+                <td width=5%> 1-2 pm </td>
+                <td width=5%> 2-3 pm </td>
+                <td width=5%> 3-4 pm </td>
+                <td width=5%> 4-5 pm </td>
+                <td width=5%> 5-6 pm </td>
+                <td width=5%> 6-7 pm </td>
+                <td width=5%> 7-8 pm </td>
+                <td width=5%> 8-9 pm </td>
+            </tr>
+            <tr align = "center">
+                <td rowspan = "2"> Work </td>
+                <td> Monday </td>
+                <td colspan="3"> Development Meeting </td>
+                <td></td>
+                <td colspan = "3"> Client Meeting </td>
+                <td> commute </td>
+                <td colspan = "3"> Free </td>
+            </tr>
+            <tr align = "center">
+                <td> Tuesday </td>
+                <td colspan="3"> In Office </td>
+                <td></td>
+                <td colspan = "7"> in Office </td>
+            </tr>
+            <tr align = "center">
+                <td rowspan = "2"> Lecture </td>
+                <td> Wednesday </td>
+                <td colspan="3"> CSC205 </td>
+                <td></td>
+                <td colspan = "7"> preparation </td>
+            </tr>
+            <tr align = "center">
+                <td> Thursday </td>
+                <td colspan="3"> MAM200 </td>
+                <td></td>
+                <td colspan = "3"> Tutorials for MAM200 </td>
+                <td colspan = "4"> Free </td>
+            </tr>
+            <tr align = "center">
+                <td colspan="1"> Research </td>
+                <td> Friday </td>
+                <td colspan="3"> Research </td>
+                <td></td>
+                <td colspan = "7"> Research </td>
+            </tr>
+        </table>
+    
+  </body>
+</html>
+ 

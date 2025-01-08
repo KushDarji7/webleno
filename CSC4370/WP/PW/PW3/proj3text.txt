@@ -1,0 +1,17 @@
+Leader:
+Adriel Agbe
+
+Project:
+Fifteen Puzzle Game
+
+Description:
+An interactive sliding puzzle game
+
+Members:
+Agbe, Adriel (main coder, ppt maker, edited video/uploaded to YT channel, github repo maker)
+Darji, Kush (coder, tester, ppt maker)
+Anthony, D'anne (coder, tester, ppt maker)
+
+
+Links:
+-
