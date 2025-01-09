@@ -3,7 +3,7 @@ console.log("Salutations,\n welcome to\n\trock\tpaper\tknife");
 const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase();
   //concise if else
-  userInput === "rock" || userInput === "paper" || userInput === "knife"
+  userInput === "rock" || userInput === "paper" || userInput === "knife" ||userInput === "bomb" || userInput === "bankai"
     ? userInput
     : console.log(
         `ERROR: invalid move: ' ${userInput} '\n try 'rock', 'paper', or ' knife.`
@@ -27,38 +27,42 @@ const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === computerChoice) {
     return gameStaleMsg();
   }
+  if (userChoice === 'bomb' || 'bankai') {
+    return gameVictoryMsg();
+  }
   //user chooses rock
   if (userChoice === "rock") {
     if (computerChoice === "paper") {
-      gameDefeatMsg();
+      return gameDefeatMsg();
     } else {
-       gameVictoryMsg();
+      return gameVictoryMsg();
     }
   }
   //user choose paper
   if (userChoice === "paper") {
     if (computerChoice === "knife") {
-       gameDefeatMsg();
+      return gameDefeatMsg();
     } else {
-      gameVictoryMsg();
+      return gameVictoryMsg();
     }
   }
   //user choose knife
   if (userChoice === "knife") {
     if (computerChoice === "rock") {
-        gameDefeatMsg();
+      return gameDefeatMsg();
     } else {
-       gameVictoryMsg();
+      return gameVictoryMsg();
     }
   }
   //wild card choose
-//   if (userChoice === "bomb") {
-//     return gameVictoryMsg();
-//   }
+  if (userChoice === "bomb") {
+    return gameVictoryMsg();
+  }
 };
-// !!CHANGE USER VARIABLE HERE TO MAKE USER GAME CHOICE!!
+
+//  !! change user choice/move here !!
 const playGame = () => {
-  const userChoice = getUserChoice("knife");
+  const userChoice = getUserChoice("bomb");
   const computerChoice = getComputerChoice();
 
   console.log(`user:${userChoice}\n\t|vs|\n bot:${computerChoice}`);
@@ -79,15 +83,13 @@ const gameDefeatMsg = () => {
   console.log("Defeat\nComputer Win's");
 };
 const gameNoContMsg = () => {
-  //if bomb || Bankai move is played
+  //if bomb/ Bankai move is played
+    console.log("Victory, User Win's");
 };
 
 playGame();
-
-
 
 // DEBUG
 //Debug variables, functions and what not, not intendend for final program
 
 // console.log(`\nDEBUG`)
-// 
