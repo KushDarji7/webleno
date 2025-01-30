@@ -1,0 +1,80 @@
+body {
+	font-family: Comic Sans MS;
+	font-size: 14pt;
+	
+}
+
+#str{
+	text-align: center;
+}
+
+#controls, #overall, #puzzlearea {
+	width: 400px;
+}
+
+#controls {
+	padding-top: 10px;
+	text-align: center;
+}
+
+h1 {
+	margin: 10px 0px;
+	text-align: center;
+}
+
+/* centers puzzle */
+#overall {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* puzzle pieces area */
+#puzzlearea {
+	font-family: sans-serif;
+	font-size: 32pt;
+	height: 400px;
+	padding: 0px;
+	position: relative;
+}
+
+/* puzzle pieces characteristics/sizing */
+.puzzlepiece {
+	background-image: url(./assest/yellow.jpg);
+	border: 2px solid black;
+	height: 96px;
+	line-height: 96px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	width: 96px;
+}
+
+/* puzzle piece hovered */
+.movablepiece:hover {
+	border-color: red;
+	color: red;
+	cursor: pointer;
+}
+
+#w3c {
+	float: right;
+}
+
+#w3c img {
+	border: none;
+}
+
+#text{
+	float:left;
+}
+
+.gStat{
+	position: relative;
+	display: table-cell;
+	left: 100%;
+	padding: 10px;
+}
+
+.timer, .score{
+	text-align: center;
+}

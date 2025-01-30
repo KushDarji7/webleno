@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match</title>
+    <link rel="stylesheet" type="text/css" href="./hw5c.css">
+
+
+</head>
+
+<body>
+    <h1> <a href="./hw51.html"> <button> HW 5 part A </button></a> </h1>
+    <br>
+    <h1> <a href="./hw5b.html"> <button> HW 5 part B </button></a> </h1>
+    <br>
+    <h2>Memory game </h2>
+
+    <button id="myBtn1">play</button>
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("myBtn1").addEventListener("click", displayInfo);
+
+
+        function displayInfo() {
+            document.getElementById("demo").innerHTML = "go", alert("welcome to memory game \n you will have to choose and match the pictures accordingly to win the game \n click on the pictures");
+
+            //show all pictures
+            //initieate timer
+
+        }
+
+        var memory_array = [
+            {
+                name: 'n1',
+                img: 'tile/n1.jpg'
+            },
+            {
+                name: 'n1',
+                img: 'tile/n1.jpg'
+            },
+            {
+                name: 'n2',
+                img: 'tile/n2.jpg'
+            },
+            {
+                name: 'n2',
+                img: 'tile/n2.jpg'
+            },
+            {
+                name: 'n3',
+                img: 'tile/n3.jpg'
+            },
+            {
+                name: 'n3',
+                img: 'tile/n3.jpg'
+            },
+            {
+                name: 'n4',
+                img: 'tile/n4.jpg'
+            },
+            {
+                name: 'n4',
+                img: 'tile/n4.jpg'
+            },
+            {
+                name: 'n5',
+                img: 'tile/n5.jpg'
+            },
+            {
+                name: 'n5',
+                img: 'tile/n5.jpg'
+            },
+            {
+                name: 'n6',
+                img: 'tile/n6.jpg'
+            },
+            {
+                name: 'n6',
+                img: 'tile/n6.jpg'
+            },
+            {
+                name: 'n7',
+                img: 'tile/n7.jpg'
+            },
+            {
+                name: 'n7',
+                img: 'tile/n7.jpg'
+            },
+            {
+                name: 'n8',
+                img: 'tile/n8.jpg'
+            },
+            {
+                name: 'n8',
+                img: 'tile/n8.jpg'
+            },
+
+
+        ]
+        var memory_values = [];
+        var memory_tile_ids = [];
+        var tiles_flipped = 0;
+
+        //shuffle board
+        Array.prototype.memory_tile_shuffle = function () {
+            var i = this.length, j, temp;
+            while (--i > 0) {
+                j = Math.floor(Math.random() * (i + 1));
+                temp = this[j];
+                this[j] = this[i];
+                this[i] = temp;
+            }
+        }
+        function newBoard() {
+            tiles_flipped = 0;
+            var output = '';
+            memory_array.memory_tile_shuffle();
+            for (var i = 0; i < memory_array.length; i++) {
+                output += '<div id="tile_' + i + '" onclick="memoryFlipTile(this,\'' + memory_array[i] + '\')"></div>';
+            }
+            document.getElementById('memoryBoard').innerHTML = output;
+        }
+        function memoryFlipTile(tile, val) {
+            if (tile.innerHTML == "" && memory_values.length < 2) {
+                tile.style.background = '#FFF';
+                tile.innerHTML = val;
+                if (memory_values.length == 0) {
+                    memory_values.push(val);
+                    memory_tile_ids.push(memory_array[tile]);
+                } else if (memory_values.length == 1) {
+                    memory_values.push(val);
+                    memory_tile_ids.push(tile.id);
+                    if (memory_values[0] == memory_values[1]) {
+                        tiles_flipped += 2;
+                        // Clear both arrays
+                        memory_values = [];
+                        memory_tile_ids = [];
+                        // Check to see if the whole board is cleared
+                        if (tiles_flipped == memory_array.length) {
+                            alert("Board cleared... generating new board");
+                            document.getElementById('memoryBoard').innerHTML = "";
+                            newBoard();
+                        }
+                    } else {
+                        function flip2Back() {
+                            // Flip the 2 tiles back over
+                            var tile_1 = document.getElementById(memory_tile_ids[0]);
+                            var tile_2 = document.getElementById(memory_tile_ids[1]);
+                            tile_1.style.background = 'url(tiles/match.jpg) no-repeat';
+                            tile_1.innerHTML = "";
+                            tile_2.style.background = 'url(tiles/match.jpg) no-repeat';
+                            tile_2.innerHTML = "";
+                            // Clear both arrays
+                            memory_values = [];
+                            memory_tile_ids = [];
+                        }
+                        setTimeout(flip2Back, 700);
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
+    <div id="memoryBoard"></div>
+
+    <script>newBoard();</script>
+
+</body>
+
+
+</html>
