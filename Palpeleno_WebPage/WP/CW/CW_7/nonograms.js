@@ -24,7 +24,7 @@
     };
 
 
-    function changeBoxMark() {
+    changeBoxMark = () => {
         down = true;
         if (this.classList.contains("filled")) {
             this.classList.remove("filled");
@@ -40,7 +40,7 @@
     }
 
 
-    function clearPuzzle() {
+    clearPuzzle = () => {
         if (confirm("Are you sure you want to clear the puzzle?")) {
             let boxes = $$(".box");
             for (let i = 0; i < boxes.length; i++) {
@@ -49,7 +49,7 @@
         }
     }
 
-    function dragBoxStatus() {
+     dragBoxStatus = () => {
         if (down) {
             if (currentType == "") {
                 this.classList.remove("crossed-out");
