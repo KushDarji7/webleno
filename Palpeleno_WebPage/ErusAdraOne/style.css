@@ -9,8 +9,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  font-family: "Roboto", white;
-  background-color: #000000;
+  font-family:'Courier New', Courier, monospace, white;
+  background-color: #101010;
 }
 
 /* base header A */
@@ -29,7 +29,7 @@ body {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto 1fr;
   gap: 10px;
-  border: 12px groove rgb(255, 255, 255);
+  border: 12px groove rgb(11,6,43);
 }
 
 .topBorder {
