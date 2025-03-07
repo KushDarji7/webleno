@@ -1,52 +1,117 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* should be apart of block E */
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    font-family: 'Roboto', sans-serif white;
-    background-color: #132a4a;
-}
-
-/* .container */
-div{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto 1fr auto;
-    gap: 10px;
-    height: 100%;
-    padding: 10px;
-    border: 10px groove slateblue;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Roboto", white;
+  background-color: #000000;
 }
 
 /* base header A */
-.bg{
-    grid-column: 1 / -1;
-    background-color: #132a4a;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
+.bg {
+  display: grid;
+  justify-content: center;
+  background-color: #132a4a;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #164a41;
 }
 
-.overlayAlpha{
-    display: grid;
+/* main content */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  border: 12px groove rgb(255, 255, 255);
 }
 
-.overlayC {
+.topBorder {
+  nav-index: auto;
+  border-top: 12px groove rgb(11, 6, 43);
+}
+.bottomBorder {
+  border-bottom: 12px groove rgb(11, 6, 43);
+}
+
+.nav-selection ul {
+  list-style: none;
+}
+.nav-selection li {
+  background-color: #5b78a0;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: grab;
+}
+
+.inlineTextBox {
+  display: flex;
+  max-width: fit-content;
+  background-color: #1e2835;
+  gap: 10px;
 }
 
 .overlayE {
-}
-.overlayf {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #5b78a0;
+  text-align: left;
 }
 
-.overlayG {
+/* widget top-left */
+.overlayfG {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #5b78a0;
+  padding: 10px;
+  border-radius: 15px;
 }
 
-.OverlayVergil{
+/* widget top right */
+.overlayFWidget {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #5b78a0;
+  text-align: left;
+  flex: 2;
+}
+/* bottom right */
+.overlayGWidget {
+  padding: 10px;
+  background-color: #5b78a0;
+  border-radius: 15px;
+  flex: 1;
+}
+
+/* inside G */
+.OverlayVergil {
+  padding: 5px;
+  background-color: #1e2835;
+  border-radius: 10px;
+  flex: 1;
+}
+
+/* responsive design */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+  .overlayCD,
+  .overlayfG {
+    flex-direction: row;
+    overflow-x: auto;
+  }
 }
