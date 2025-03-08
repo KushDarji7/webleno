@@ -2,12 +2,8 @@
 body{
   background-color: rgba(4, 4, 21, 0.96);
     background-image:url("./assets/HaloODST_HUD_modified\ site-wip.png");
-    background-size: cover;
-    background-attachment: fixed;
+    background-size:auto;
     background-position: center;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-origin: border-box;
     font-family: RobotoMono;
     color: #817040;
 }
