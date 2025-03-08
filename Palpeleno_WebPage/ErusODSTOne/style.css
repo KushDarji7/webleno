@@ -2,8 +2,10 @@
 body{
   background-color: rgba(4, 4, 21, 0.96);
     background-image:url("./assets/HaloODST_HUD_modified\ site-wip.png");
-    background-size:auto;
+    background-size:contain;
+    background-attachment: fixed;
     background-position: center;
-    font-family: RobotoMono;
+    background-repeat: no-repeat;
+    font-family:'Courier New', Courier, monospace;
     color: #817040;
 }
