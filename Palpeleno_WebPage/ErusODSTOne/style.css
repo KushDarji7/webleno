@@ -1,11 +1,65 @@
-
-body{
-  background-color: rgba(4, 4, 21, 0.96);
-    background-image:url("./assets/HaloODST_HUD_modified\ site-wip.png");
-    background-size:contain;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family:'Courier New', Courier, monospace;
-    color: #817040;
+* {
+  font-family: "Roboto Mono", monospace;
+  color: #817040;
+  margin: 0;
+  padding: 0;
 }
+
+.displayContents {
+  background-image: url("./assets/glitch-5970-odst-hud-black-bg.png");
+  background-color:#6b0c0c;
+  background-size: cover;
+  background-repeat: no-repeat no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+.displayContents{
+  margin: 0;
+}
+
+.healthBar {
+  background-image: url("./assets/HBrectangle.svg");
+}
+
+.navigationHeader {
+  position: fixed;
+  left: 350px;
+}
+
+/* .leftContainer {
+  background-image: url("./assets/Lrectangle.svg");
+  position: fixed;
+  margin-top: 0;
+  left: 350px;
+  height: 40px;
+  display: flexbox;
+  justify-content: left;
+  align-items: center;
+} */
+
+/* .midContainer{
+  background-image: url("./assets/Brectangle.svg");
+  position: fixed;
+  display: flexbox;
+} */
+
+/* .rightContainer {
+  background-image: url("./assets/Rrectangle.svg");
+  position: fixed;
+
+  padding: 1px;
+  position: fixed;
+  margin-right: 0;
+} */
+
+/* .aboutMe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+} */
