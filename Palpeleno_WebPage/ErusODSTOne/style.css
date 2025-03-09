@@ -1,0 +1,16 @@
+
+
+h1, p{
+    font-family: 'Courier New', Courier, monospace;
+    color: #817040;
+    font-size: 20px;
+}
+
+.backGroundUI{
+    background-image: url('./assets/ErusODSTOne.png');
+    
+    }
+
+.UIcontainers{
+  margin: 0;
+}
