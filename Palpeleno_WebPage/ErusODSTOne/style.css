@@ -1,16 +1,107 @@
-
-
-h1, p{
-    font-family: 'Courier New', Courier, monospace;
-    color: #817040;
-    font-size: 20px;
+h1,p {
+  font-family: "Courier New", Courier, monospace;
+  color: #817040;
 }
 
-.backGroundUI{
-    background-image: url('./assets/ErusODSTOne.png');
-    
-    }
-
-.UIcontainers{
+body {
   margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  background: url("./assets/odst-hud_bg.png") no-repeat center center fixed;
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+}
+
+.UIContainer {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "leftCont bodyCont rightCont"
+    "lleft . lright";
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto 3fr auto;
+  position: relative;
+}
+
+.nav-header {
+  grid-area: nav;
+  background: rgba(111, 24, 24, 0);
+  text-align: center;
+  width: 40%;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.NavHeadingName{
+  font-size:large;
+  font-weight: bold;
+}
+
+.body-content {
+  grid-area: bodyCont;
+  position: absolute;
+  align-items: center;
+  top: 16%;
+  width: 45%;
+  height: 74%;
+  transform: translateX(-50%);
+  background: rgba(135, 13, 13, 0);
+}
+.body-text{
+  font-size:medium;
+}
+
+.left-container, .right-container{
+  position: absolute;
+  top: 3%;
+  width: 22%;
+  height: 68%;
+  background: rgba(160, 14, 14, 0);
+  
+}
+
+.left-container {
+  grid-area: leftCont;
+  left: .5%;
+}
+
+.l-expl{
+  font-size:medium;
+}
+
+.right-container {
+  grid-area: rightCont;
+  right: .5%;
+}
+
+.r-expl{
+  font-size:medium;
+}
+.lower-left, .lower-right{
+  position: absolute;
+  bottom: 2%;
+  width: 20%;
+  height: 15%;
+  background: rgba(94, 4, 4, 0);
+}
+
+.lower-left {
+  grid-area: lleft;
+  text-align: start;
+  left: 1%;
+}
+
+.lower-right {
+  grid-area: lright;
+  text-align: end;
+  right:1%;
+}
+
+.widget-container{
+  font-size:larger;
+  font-weight:bolder ;
 }
