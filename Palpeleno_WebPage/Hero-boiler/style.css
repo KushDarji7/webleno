@@ -1,7 +1,8 @@
 :root {
   --text-color: white;
   --text-link: rgb(251, 239, 147);
-  --background-color: rgba(40, 20, 20, 0.538);
+  --background: rgba(13, 16, 42, 0.742);
+  --second-background:rgba(19, 55, 56, 0.725);
 }
 
 * {
