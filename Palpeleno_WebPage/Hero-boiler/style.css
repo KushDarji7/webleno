@@ -1,0 +1,67 @@
+:root {
+  --text-color: white;
+  --text-link: rgb(251, 239, 147);
+  --background-color: rgba(40, 20, 20, 0.538);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  background-color: var(--background-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.roboto-mono-text {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 50px;
+  height: 80px;
+}
+
+.widget-icon {
+    display: flex;
+    top: 10%;
+}
+
+nav .left a {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav .right a {
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+nav .right img {
+  width: 5%;
+}
+nav .right a:last-child {
+  color: var(--text-color);
+  background-color: rgba(0, 0, 0, 0.29);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
