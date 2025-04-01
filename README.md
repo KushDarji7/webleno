@@ -1,17 +1,20 @@
-
 Salutations,
-the Repo establishes projects, mini programs, and recreational code for studying, web bassed languages/scripts such as , html,CSS, php, javascript, typpe script...
-
-PalHomeProjects
-  personal projects that aim to imporove, enviroment/ life
+  the Repo establishes projects, mini programs, and recreational code for studying, web based languages/scripts such as, html, CSS, javascript, type script ,frameworks like three.js and webGL.
 
 Webleno
+  web development test grounds
   Javascript test grounds
   codecademy test grounds, mini program inventory
 
-CSC4370
-  GSU web development class, catalogoues assingments completed in the class
+  Palpeleno_WebPage
+    active development for my webpage for personal, and portfolio use
 
-Palpeleno_WebPage
-  active development for my webpage for personal, and portfolio use
+    ErusODST3
+      third iteration of portfolio spartan hud website project
+    
+    Hero-Boiler
+      fourth iteration of a simple reactive css/html portfolio
+
+    threejs_playground
+      learning repo for three js framework and webGL for 3d portfolio and creating Fzero99 game using mode 7 2d graphics
   

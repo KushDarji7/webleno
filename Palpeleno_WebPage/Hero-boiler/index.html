@@ -9,59 +9,184 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Paleno's Portfolio </title>
 </head>
 
 <body>
     <!-- navigation bar -->
     <nav>
-        <div class="left">
-            <a href="./index.html"><h1>Kush Darji</h1></a>
-        </div>
-        <div class="right">
-            <div class="widget-icon">
+        <a href="#" class="logo"><span>Kush</span></a>
+        <ul class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Portfolio</a>
+            <a href="#description">Networking</a>
+        </ul>
 
-                <a href="www.linkedin.com/in/kush-darji-18bb81130" target="_blank" rel="noopener noreferrer">
-                    <img src="./icons/social-linkedin.svg" alt="_">
-                    <span>Linkedin</span>
-                </a>
-            </div>
-            <div class="widget-icon">
-
-                <a href="https://github.com/Palpeleno" target="_blank" rel="noopener noreferrer">
-                    <img src="./icons/github.svg" alt="_">
-                    <span>Github</span>
-                </a>
-            </div>
-            <div class="widget-icon">
-
-                <a href="mailto:kush7darji+work@gmail.com">
-                    <img src="./icons/email-svgrepo-com.svg" alt="_">
-                    <span>Email</span>
-                </a>
-            </div>
-        </div>
+        <i class='bx bx-menu' id="menu"></i>
+        <a href="#contact" class="btn">Contact Me</a>
     </nav>
-    <main>
-        <!-- section 1 -->
-        <section>
+    <!-- home section -->
+    <section id="home">
+        <img src="./assets/kush _proffesional_headshot.jpg" alt="Vergil">
+        <div class="info-box">
+            <h1><span>Salutations,I'm Kush Darji</span></h1>
+            <h3><span>Developer</span></h3>
+            <p> I am a Computer Science graduate with a strong foundation in programming, software development, and system sustainability. My goal is to refine my technical skills while contributing to impactful and efficient software solutions. Make software human friendly
+            </p>
+        </div>
 
-        </section>
-        <!-- section 2 -->
-        <section id="skills">
+        <!-- <div class="btn-box">
+            <div class="btn">Hire</div>
+            <div class="btn">Contact Me</div>
 
-        </section>
-        <!-- section 3 -->
-        <section id="testimony">
+        </div> -->
 
-        </section>
-        <!-- section 4 -->
-        <section id="contact">
+    </section>
 
-        </section>
-    </main>
+    <section id="about">
+        <div class="about-box">
+            <div class="about-info">
+                <h1><span>About Me</span></h1>
+                <p>First-generation Computer Science graduate with a strong foundation in programming, software development, and system sustainability. My goal is to refine my technical in web development, .net applications and ebbedded systems, while contributing to impactful and efficient software solutions. Make software human friendly.
+                My creative hobbies in tandem with software development inlcude DIY fabrication, sustainability and QOL of software, motorsports, mind and body training, PC gamming/modding, hardware instalation and horticulure to name a few.</p>
+            </div>
+
+            <h2><span>Skills</span></h2>
+            <div class="skills">
+                <ul>
+                    <li>
+                        <span> <i class='bx bx-chevron-right'></i> HTML</span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i> CSS</span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i> JavaScript</span>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i> Version Control</span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i> Python</span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i> Software Development Operations</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <img src="./assets/kush _proffesional_headshot.jpg" alt="ITs ME =D">
+    </section>
+
+    <section id="services">
+        <h1 class="header"><span>Services / projects ?</span></h1>
+
+        <div class="services-container">
+
+            <div class="box">
+                <h1><span>Web Design</span></h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem natus architecto veniam ad fugiat
+                    iusto hic, neque aliquid a repellat, magni, praesentium similique sequi autem modi explicabo tempora
+                    libero aliquam.
+                    change pics
+                </p>
+                <img src="./assets/web-design-messy-table-and-note-with.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <h1><span>Mobile App</span></h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem natus architecto veniam ad fugiat
+                    iusto hic, neque aliquid a repellat, magni, praesentium similique sequi autem modi explicabo tempora
+                    libero aliquam.
+                    change pics
+                </p>
+                <img src="./assets/mobile-smartphones-app.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <h1><span>JavaScript Project</span></h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem natus architecto veniam ad fugiat
+                    iusto hic, neque aliquid a repellat, magni, praesentium similique sequi autem modi explicabo tempora
+                    libero aliquam.
+                    change pics
+                </p>
+                <img src="./assets/8ivt81bojiq81.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- contact form -->
+
+    <section id="contact">
+        <h1 class="header">Contact</h1>
+
+        <form action="#">
+            <div class="input-box">
+                <span>Full Name</span>
+                <input type="text" placeholder="Enter Full Name">
+            </div>
+            <div class="input-box">
+                <span>Email</span>
+                <input type="text" placeholder="Enter Email">
+            </div>
+
+            <div class="input-box">
+                <span>Message</span>
+                <input type="text" placeholder="Enter Message">
+            </div>
+
+            <div class="btn">Submit</div>
+        </form>
+    </section>
+
+    <footer id="description">
+        <div class="col-left">
+            <div class="col-box">
+                <span><i class='bx bxs-location-plus'></i></span>
+                <span>Atlanta, GA</span>
+            </div>
+            <div class="col-box">
+                <span><i class='bx bxs-phone'></i></span>
+                <span>+1 404 844 3017</span>
+            </div>
+            <div class="col-box">
+                <span><i class='bx bxs-envelope'></i></span>
+                <span>kush7darji+work@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="col-right">
+            <span>About My Services</span>
+            <p>At the start of my professional journey, I am seeking long-term or short-term software engineering roles to grow and advance in the field. I aim to develop scalable, efficient solutions while refining my expertise in software architecture and development. My goal is to contribute to impactful projects, collaborate with experienced professionals, and eventually step into leadership roles.</p>
+
+            <div class="social-icons">
+
+                <span>
+                    <a class="links" href="https://www.linkedin.com/in/kush-darji-18bb81130" target="_blank" rel="noopener noreferrer">
+                        <i class='bx bxl-linkedin-square' ></i>
+                    </a>
+                </span>
+                
+                <span>
+                    <a class="links" href="https://github.com/Palpeleno" target="_blank" rel="noopener noreferrer">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </span>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
