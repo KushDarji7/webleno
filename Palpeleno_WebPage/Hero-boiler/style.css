@@ -393,6 +393,71 @@ footer {
   color: white;
 }
 
+/* news ticker */
+.news-container{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right:0;
+  box-shadow: 0 4px 8px -4px rgba(223, 40, 40, 0.24);
+}
+
+.news-container .news-heading{
+  position: absolute;
+  background:yellow;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding:0px 8px 0px 80px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  z-index: 200;
+}
+.news-container img{
+  position: absolute;
+
+  height: 100%;
+  left: 0;
+}
+
+.news-container ul{
+  display: flex;
+  list-style: none;
+  animation: scroll 25s infinite linear;
+  background-color: black;  
+}
+
+.news-container li{
+  /* text should not go to next line but stay in one line */
+  white-space: nowrap;
+  padding: 10px 24px;
+  color: gray;
+}
+
+.news-container ul li::after{
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: rgb(144, 140, 140);
+  position: absolute;
+  bottom: 0;
+  right:0 ;
+}
+
+.news-container ul li:last-child::after{
+display: none;
+}
+/* animation of news ticker */
+@keyframes scroll {
+    from{
+      transform: translateX(100%);
+    }
+    to{
+      transform: translateX(-2083);
+    }
+}
+
+
 @media (max-width: 980px) {
   section {
     padding: 8em 15%;
