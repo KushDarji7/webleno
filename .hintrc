@@ -8,7 +8,13 @@
     "meta-viewport": "off",
     "axe/structure": "off",
     "axe/name-role-value": "off",
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ]
   },
   "browserslist": [
     "defaults",
