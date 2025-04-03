@@ -416,18 +416,13 @@ footer {
   height: 32px;
 }
 .news {
+  position: relative;
   white-space: nowrap;
   overflow: hidden;
-  flex-grow: 1;
-  position: relative;
 }
-.newsItem {
+.news-item {
   white-space: nowrap;
-  will-change: transform;
   display: inline-block;
-  padding-right: 50px;
-  animation: none;
-  right: -100%;
 }
 
 @media (max-width: 980px) {
