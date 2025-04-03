@@ -78,8 +78,18 @@ nav ul a:hover {
 }
 
 .btn:hover {
-  background-color: white;
+  background-color: rgb(125, 160, 117);
   color: var(--background);
+}
+
+.btn button{
+  display: flex;
+  align-items: center;
+  font-size: large;
+  color: rgb(255, 255, 255);
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 /* gradient text effect */
@@ -263,7 +273,7 @@ section {
   gap: 2em;
 }
 
-.box {
+.project-card{
   border: 3px solid rgb(68, 69, 68);
   border-radius: 0.5em;
   display: flex;
@@ -278,18 +288,18 @@ section {
   transition: 0.3s ease-in-out;
 }
 
-.box:hover {
+.project-card:hover {
   border: 3px solid rgb(83, 110, 79);
 }
-.box p {
+.project-card p {
   opacity: 0.8;
 }
 
-.box h1 {
+.v h1 {
   font-size: 2em;
 }
 
-.box img {
+.project-card{
   min-width: 25px;
   border-radius: 0.5em;
 }
@@ -328,6 +338,23 @@ form input {
 form input:focus {
   background: rgb(129, 144, 138);
 }
+
+.contact-inputs{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 4px 25px 4px 25px;
+  color: black;
+  border-radius: 5px;
+}
+
+.contact-inputs textarea{
+  height: 140px;
+  border-radius: 20px;
+}
+
+
 
 footer {
   display: flex;
@@ -377,6 +404,7 @@ footer {
   align-items: baseline;
   justify-content: left;
   gap: 1em;
+  height:30px;
 }
 
 .col-right .social-icons i {
@@ -529,6 +557,10 @@ footer {
   }
   .input-box input {
     padding: 0.5em 1em;
+  }
+
+  .contact-inputs{
+    width: 80vw;
   }
 
   footer {
