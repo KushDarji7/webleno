@@ -9,9 +9,7 @@ Webleno
   Palpeleno_WebPage
     active development for my webpage for personal, and portfolio use
 
-    ErusODST3
-      third iteration of portfolio spartan hud website project
-    
+   
     Hero-Boiler
       fourth iteration of a simple reactive css/html portfolio partially completed other than project redirects
 
