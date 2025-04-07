@@ -13,7 +13,7 @@ Webleno
       third iteration of portfolio spartan hud website project
     
     Hero-Boiler
-      fourth iteration of a simple reactive css/html portfolio
+      fourth iteration of a simple reactive css/html portfolio partially completed other than project redirects
 
     threejs_playground
       learning repo for three js framework and webGL for 3d portfolio and creating Fzero99 game using mode 7 2d graphics
